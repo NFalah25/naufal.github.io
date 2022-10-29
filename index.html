@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <title>Coffe Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="nama">
+                <a href="#">
+                    <h1>Coffee Shop</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#books">menu</a></li>
+                    <li><a href="#minuman">minuman</a></li>
+                    <li><a href="#makanan">makanan</a></li>
+                    <li><a href="#desert">desert</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="awal">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/1.jpg" style="width:100%">
+                <div class="text">Coffee and Desert</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/2.jpg" style="width:100%">
+                <div class="text">Indoor</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/3.jpg" style="width:100%">
+                <div class="text">Outdoor</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="minuman" id="minuman">
+        <h2>Minuman</h2>
+        <div class="minum">
+            <div id="minuman1">
+                <h3>Caffe Latte</h3>
+                <img src="img/latte.jpg" alt="kopi latte">
+                <p>Perbandingan kombinasi latte terdiri dari sepertiga espresso dan dua pertiga susu panas, sehingga
+                    lebih terasa susunya</p>
+            </div>
+
+            <div id="minuman2">
+                <h3>Kopi Ice Aren</h3>
+                <img src="img/kopiaren.jpg" alt="Kopi Ice Aren">
+                <p>Campuran kopi, susu dan gula aren yang nikmat. Rasa pahit dan manis yang melebur menjadi 1 menjadikan
+                    kopi ini spesial</p>
+            </div>
+
+            <div id="minuman3">
+                <h3>Peach Iced Tea</h3>
+                <img src="img/peach.jpg" alt="Peach Ice Tea">
+                <p>Campuran buah persik, teh, gula dan lemon menjadikan minuman ini sehat dan menyegarkan tubuh</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="makanan" id="makanan">
+        <h2>Makanan</h2>
+        <div class="makan">
+            <div id="makanan1">
+                <h3>Nasi Siram Ayam</h3>
+                <img src="img/nasgor.png" alt="kopi latte">
+                <p>Nasi goreng putih disiram dengan kuah kental. Ditaburi isian ayam cincang dan fried tofu</p>
+            </div>
+
+            <div id="makanan2">
+                <h3>Italian Fried Chicken</h3>
+                <img src="img/italian.png" alt="Kopi Ice Aren">
+                <p>Ayam goreng dengan saos spicy mayo khas italia ditambah sayur segar
+                    dan disajikan dengan nasi hangan</p>
+            </div>
+
+            <div id="makanan3">
+                <h3>Beef Slice with Sambal Ijo Terasi</h3>
+                <img src="img/beef.png" alt="Peach Ice Tea">
+                <p>Campuran buah persik, teh, gula dan lemon menjadikan minuman ini sehat dan menyegarkan tubuh</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="desert" id="desert">
+        <h2>Desert</h2>
+        <div class="penutup">
+            <div id="desert1">
+                <h3>Tempe Mendoan</h3>
+                <img src="img/mendoan.png" alt="Tahu Mendoan">
+                <p>Tempe mendoan digoreng dengan kering menggunakan bumbu rahasia incaran mahasiswa akhir bulan</p>
+            </div>
+
+            <div id="desert2">
+                <h3>Chicken Pok-Pok</h3>
+                <img src="img/pokpok.jpg" alt="Kopi Ice Aren">
+                <p>Ayam yang dipotong dadu, kemudian direndam dalam bumbu rahasia.
+                    Digoreng dengan tepung yang menghasilkan sebuah mahakarya super lezat</p>
+            </div>
+
+            <div id="desert3">
+                <h3>Tahu Bakso</h3>
+                <img src="img/tahu.jpg" alt="Peach Ice Tea">
+                <p>Tahu dengan isian daging bakso yang digoreng dengan tepung dengan harga murmer idaman Mahasiswa</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="books">
+        <h2 id="books">Buku Menu</h2>
+        <div class="buku">
+
+            <!-- Previous Button -->
+            <button id="prev-btn">
+                <i class="fas fa-arrow-circle-left"></i>
+            </button>
+
+
+            <!-- Book -->
+            <div id="book" class="book">
+                <!-- Paper 1 -->
+                <div id="p1" class="paper">
+                    <div class="front">
+                        <div id="f1" class="front-content">
+                            <img src="img/logo.png" alt="logo" id="logo"><br>
+                            <h1>"Coffee Shop"</h1>
+                            <p id="kata">“Secangkir kopi dapat membuat kita belajar,
+                                bahwa rasa pahit juga dapat dinikmati. Jadi mari kita ngopi”</p>
+                            <p id="filosofi">- Filosofi Kopi</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div id="b1" class="back-content">
+                            <img src="img/logo.png" alt="logo" id="page2">
+                            <h1>Coffee</h1>
+                            <table id="coffee-1">
+                                <tr>
+                                    <td>Expresso</td>
+                                    <td>10K</td>
+                                </tr>
+                                <tr>
+                                    <td>Americano</td>
+                                    <td>12K</td>
+                                </tr>
+                                <tr>
+                                    <td>Ice Coffee</td>
+                                    <td>18K</td>
+                                </tr>
+                                <tr>
+                                    <td>Coffee Latte</td>
+                                    <td>15K</td>
+                                </tr>
+                                <tr>
+                                    <td>Cappuccino</td>
+                                    <td>17K</td>
+                                </tr>
+                                <tr>
+                                    <td>Caramel Latte</td>
+                                    <td>19K</td>
+                                </tr>
+                                <tr>
+                                    <td>Creamy Ice Coffee</td>
+                                    <td>15K</td>
+                                </tr>
+                            </table>
+
+                            <table id="coffee-2">
+                                <tr>
+                                    <td>Ginger Coffee</td>
+                                    <td>15K</td>
+                                </tr>
+                                <tr>
+                                    <td>Ginger Latte</td>
+                                    <td>17K</td>
+                                </tr>
+                                <tr>
+                                    <td>Hazelnut Latte</td>
+                                    <td>17K</td>
+                                </tr>
+                                <tr>
+                                    <td>Kopi Ice Aren</td>
+                                    <td>15K</td>
+                                </tr>
+                                <tr>
+                                    <td>Moccacino</td>
+                                    <td>17K</td>
+                                </tr>
+                                <tr>
+                                    <td>Vanilla Latte</td>
+                                    <td>17K</td>
+                                </tr>
+                                <tr>
+                                    <td>Coffee Tubruk</td>
+                                    <td>10K</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paper 2 -->
+                <div id="p2" class="paper">
+                    <div class="front">
+                        <div id="f2" class="front-content">
+                            <h1>Ice Cream</h1>
+                            <table class="ice">
+                                <tr>
+                                    <td>Taro Latte</td>
+                                    <td>13K</td>
+                                </tr>
+                                <tr>
+                                    <td>SunKiss</td>
+                                    <td>12K</td>
+                                </tr>
+                                <tr>
+                                    <td>Milky Berry</td>
+                                    <td>16K</td>
+                                </tr>
+                                <tr>
+                                    <td>Choco Berry</td>
+                                    <td>16K</td>
+                                </tr>
+                                <tr>
+                                    <td>Milky Orange</td>
+                                    <td>15K</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div id="b2" class="back-content">
+                            <img src="img/Logo.png" alt="logo" class="log">
+                            <h1>Snacks</h1>
+                            <hr>
+                            <div class="tempe">
+                                <img src="img/mendoan.png" alt="mendoan">
+                                <h2>Tempe Mendoan</h2>
+                                <p>Tempe mendoan digoreng dengan kering menggunakan bumbu rahasia</p>
+                                <h3>15K</h3>
+                            </div>
+
+                            <div class="kentang">
+                                <img src="img/kentang.png" alt="French Fries">
+                                <h2>French Fries</h2>
+                                <p>Original</p>
+                                <h3>15K</h3>
+                            </div>
+
+                            <div class="tahu">
+                                <img src="img/tahubakso.png" alt="Tahu Bakso">
+                                <h2>Tahu Bakso</h2>
+                                <p>Tahu dengan isian daging bakso digoreng dengan baluran tepung membuat si tahu bakso
+                                    menjadi
+                                    gurih dan krispi</p>
+                                <h3>20K</h3>
+                            </div>
+
+                            <div class="pancake">
+                                <img src="img/pancake.png" alt="Pancake">
+                                <h2>Pancake</h2>
+                                <p>Kue dadar yang diatasnya terdapat krim vanilla dengan
+                                    selai madu dan buah strawberry dan blueberry</p>
+                                <h3>25K</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Paper 3 -->
+                <div id="p3" class="paper">
+                    <div class="front">
+                        <div id="f3" class="front-content">
+                            <h1>Food</h1>
+                            <hr>
+
+                            <div class="nasgoreng">
+                                <img src="img/nasgor.png" alt="Nasi Goreng">
+                                <h3>Nasi Siram Ayam</h3>
+                                <p>Nasi goreng putih disiram dengan kuah kental. Ditaburi isian ayam cincang dan fried
+                                    tofu</p>
+                                <h2>30K</h2>
+                            </div>
+
+                            <div class="chicken">
+                                <img src="img/ayam.jpe" alt="Ayam">
+                                <h3>Italian Fried Chicken</h3>
+                                <p>Ayam goreng dengan saos spicy mayo khas italia ditambah sayur segar
+                                    dan disajikan dengan nasi hangan</p>
+                                <h2>32K</h2>
+                            </div>
+
+                            <div class="pan">
+                                <img src="img/pan.webp" alt="Beef Slice">
+                                <h3>Beef Slice</h3>
+                                <h4>Sambal Ijo terasi</h4>
+                                <p>Pan fried slice dengan sambal ijo diatasnya serta tambahan bayam krispi dan disajikan
+                                    dengan
+                                    nasi hangat</p>
+                                <h2>30K</h2>
+                            </div>
+
+                            <img src="img/Logo.png" alt="logo" class="log">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div id="b3" class="back-content">
+                            <img src="img/Logo.png" alt="logo" class="log">
+                            <img src="img/minum.png" alt="Minuman" class="drink">
+                            <h1>Beverages</h1>
+                            <hr>
+
+                            <div id="tea">
+                                <h2>Tea</h2>
+                                <table>
+                                    <tr>
+                                        <td>Black Tea</td>
+                                        <td>13K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lime Tea</td>
+                                        <td>15K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Peach Tea</td>
+                                        <td>15K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lychee Tea</td>
+                                        <td>16K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thai Tea</td>
+                                        <td>17K</td>
+                                    </tr>
+                                </table>
+                                <hr>
+                            </div>
+
+                            <div id="coklat">
+                                <h2>Chocolatte</h2>
+                                <table>
+                                    <tr>
+                                        <td>Chocho Banana</td>
+                                        <td>17K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chocho Milk</td>
+                                        <td>16K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chocho Mint</td>
+                                        <td>17K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chocho Mazelnut</td>
+                                        <td>17K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chocho Berry</td>
+                                        <td>17K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chocho Oreo</td>
+                                        <td>16K</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Button -->
+            <button id="next-btn">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        </div>
+
+        </section>
+
+        <section class="kontak">
+            <div class="wrap">
+                <h2>PESAN TEMPAT</h2>
+            </div> 
+
+            <form action="" method="post">
+                <div class="form">
+                    <label for="">Nama</label>
+                    <input type="text" name="nama" id="nama">
+                </div>
+
+                <div class="form">
+                    <label for="">Waktu</label>
+                    <input type="text" name="waktu" id="waktu" placeholder="Contoh : 12.00 - 14.00">
+                </div>
+
+                <div class="form">
+                    <label for="">Pesanan</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Masukkan Semua Pesanan Anda..." name="pesanan" id="pesanan"></textarea>
+                </div>
+
+                <div class="form">
+                    <button type="submit" class="submit">Kirim Pesanan</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="sosmed">
+            <ul class="pertama">
+                <li>
+                    <h1>Sosial Media</h1>
+                    <ul class="kedua">
+                        <a href="#"><img src="img/fb.png" alt="facebook"></a>
+                        <a href="#"><img src="img/ig.png" alt="instagram"></a>
+                        <a href="#"><img src="img/tweet.png" alt="Tweeter"></a>
+                    </ul>
+                </li>
+
+                <li class="kedua">
+                    <h1>Jam Buka</h1>
+                    <p>Senin - Jumat 13.00 - 22.00</p>
+                    <p>Sabtu - Minggu 10.00 - 24.00</p>
+                </li>
+
+                <li class="kedua">
+                    <h1>Telepon</h1>
+                    <p>021-(778291)</p>
+                </li>
+            </ul>
+        </footer>
+
+</body>
+
+</html>
